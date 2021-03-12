@@ -52,7 +52,7 @@ app.put("/alunos", (req, res, next) => {
     })
     res.status(204).end();
 });
-//tratamento de requisições DELETE do elcio
+//tratamento de requisições DELETE
 app.delete("/alunos", (req, res, next) => {
     alunos.forEach((aluno) => {
         if (aluno.id != req.body.id) {
